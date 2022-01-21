@@ -128,7 +128,7 @@ const updateEmployeeRole = () => {
         "UPDATE employee SET role_id = ? WHERE first_name = ?",
         [answer.role_id, answer.name],
         function (err, data) {
-          console.table(data);
+          console.table("Successfully Updated!");
           init();
         });
     });
